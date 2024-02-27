@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import quizz_questions from '../../../assets/data/quizz_questions.json';
 
 @Component({
@@ -6,6 +8,7 @@ import quizz_questions from '../../../assets/data/quizz_questions.json';
   selector: 'app-quizz',
   templateUrl: './quizz.component.html',
   styleUrls: ['./quizz.component.scss'],
+  imports: [CommonModule],
 })
 export class QuizzComponent implements OnInit {
   title: string = '';
